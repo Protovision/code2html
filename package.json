@@ -1,0 +1,16 @@
+{
+	"name" : "protovision.github.io code2html",
+	"version" : "1.0.0" ,
+	"description" : "Yet another code2html converter" ,
+	"scripts" : {
+		"start" : "node server.js"} ,
+	"repository" : {
+		"type" : "git" ,
+		"url" : "git://github.com/protovision/code2html"} ,
+	"author" : "Mark Swoope <markswoope@outlook.com>" ,
+	"bugs" : {
+		"url" : "https://github.com/protovision/code2html/issues"} ,
+	"homepage" : "https://protovision.github.io/code2html" ,
+	"dependencies" : {
+		"https-localhost" : "4.x"}}
+

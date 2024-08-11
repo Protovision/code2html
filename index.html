@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>code2html</title>
+		<meta name="author" content="Mark Swoope">
+		<link rel="stylesheet" href="style.css">
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>code2html</h1>
+				<p>Convert code to HTML</p>
+				<hr>
+			</header>
+			<div id="swoope-code2html-options">
+				<div>
+					<label>Tab size:</label>
+					<input id="swoope-code2html-option-tabsize" type="number">
+				</div>
+				<div>
+					<label>Text type:</label>
+					<select id="swoope-code2html-option-type">
+						<option>code</option>
+						<option>kbd</option>
+						<option>samp</option>
+					</select>
+				</div>
+			</div>
+			<div id="swoope-code2html-buttons">
+				<input id="swoope-code2html-button-paste" type="button" value="Paste text">
+				<input id="swoope-code2html-button-convert" type="button" value="Convert">
+				<input id="swoope-code2html-button-copy" type="button" value="Copy HTML">
+			</div>
+			<div>
+				<label>Text:</label>
+				<textarea 
+					id="swoope-code2html-text"
+					autocomplete="off"
+					autocorrect="off"
+					autocapitalize="off"
+					spellcheck="false"></textarea>
+			</div>
+			<div>
+				<label>HTML:</label>
+				<div>
+					<input id="swoope-code2html-html" type="text">
+				</div>
+			</div>
+			<footer>
+				<hr>
+				<a rel="external noreferrer noopener" href="https://protovision.github.io">by Mark Swoope</a>
+			</footer>
+		</main>
+	</body>
+</html>

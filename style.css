@@ -1,0 +1,272 @@
+/* Reset */
+
+*,
+::before,
+::after{
+	box-sizing:border-box;
+	margin:0;
+	outline:0;
+	border:0;
+	padding:0;
+	vertical-align:inherit;
+	font:inherit;
+	text-align:inherit;
+	text-decoration:none;
+	overflow-wrap:anywhere;}
+menu,
+ol,
+ul{
+	list-style:none;}
+table{
+	border-collapse:collapse;
+	max-width:100%;}
+
+/* Font families */
+
+body{
+	font-family:system-ui,ui-sans-serif,sans-serif;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family:ui-serif,serif;}
+
+pre,
+code,
+kbd,
+samp{
+	font-family:ui-monospace,monospace;}
+
+/* Font sizes */
+
+h1{
+	font-size:2rem;}
+h2{
+	font-size:1.5rem;}
+h3{
+	font-size:1.2rem;}
+h4{
+	font-size:1rem;}
+h5{
+	font-size:0.85rem;}
+h6{
+	font-size:0.75rem;}
+small{font-size:50%;}
+sub,
+sup{
+	position:relative;
+	vertical-align:middle;}
+sub{bottom:-0.5em;}
+sup{top:-0.5em;}
+
+/* Line heights */
+
+body{
+	line-height:1.5;}
+pre{
+	line-height:1.25;}
+
+/* Margins */
+
+address,
+article,
+aside,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+main,
+nav,
+section{
+	margin:1rem 0;}
+blockquote,
+dl,
+figure,
+hr,
+menu,
+ol,
+p,
+pre,
+ul{
+	margin:1rem 0;}
+table{
+	margin:1rem auto;}
+
+/* Borders */
+
+blockquote{
+	border-left:4px solid;}
+
+/* Padding */
+
+body{
+	padding:1.5rem;}
+blockquote,
+pre{
+	padding:0 1rem;}
+dd,
+dl{
+	padding-left:1rem;}
+ol,
+ul{
+	padding-left:2rem;}
+th,
+td{
+	padding:0.5rem;}
+
+/* Overflow */
+
+:root{
+	overflow:auto;
+	scroll-behavior:smooth;}
+figure{
+	overflow-x:auto;}
+pre{
+	overflow:auto;}
+
+/* White space */
+
+pre,
+table{
+	white-space:nowrap;}
+
+/* List styling */
+
+ol{
+	list-style-type:decimal;}
+ul{
+	list-style-type:square;}
+
+/* Font and text styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th{
+	font-weight:bolder;}
+dt,
+cite,
+dfn,
+em,
+i,
+var{
+	font-style:italic;}
+del,
+s{
+	text-decoration:line-through solid 1px;}
+ins{
+	text-decoration:overline solid 1px;}
+u{
+	text-decoration:underline wavy 1px;}
+a:hover{
+	text-decoration:underline solid 1px;}
+a:active{
+	text-decoration:none;}
+
+/* Backgrounds and colors */
+
+body{
+	background-color:#eee;
+	color:#111;}
+hr{
+	height:1px;
+	background-color:#111;}
+a{
+	color:#07b;}
+a:active{
+	color:#0b7;}
+::selection,
+mark{
+	background-color:#ff0;}
+@media (prefers-color-scheme:dark){
+	body{
+		background-color:#111;
+		color:#eee;}
+	hr{
+		background-color:#eee;}
+	a{
+		color:#09d;}
+	a:active{
+		color:#0d9;}
+	::selection,
+	mark{
+		color:#111;}}
+@supports (color-scheme:light dark) and
+	(background-color:Canvas) and
+	(color:CanvasText) and
+	(background-color:Mark) and
+	(color:MarkText) and
+	(color:LinkText) and
+	(color:ActiveText){
+	body{
+		color-scheme:light dark;
+		background-color:Canvas;
+		color:CanvasText;}
+	hr{
+		background-color:CanvasText;}
+	a{
+		color:LinkText;}
+	a:active{
+		color:ActiveText;}
+	::selection,
+	mark{
+		background-color:Mark;
+		color:MarkText;}}
+
+/* Controls */
+
+input,
+select,
+option,
+textarea{
+	border:1px solid;
+	padding:0.25rem;}
+
+input[type="number"]{
+	appearance:textfield;}
+
+/* Special */
+
+#swoope-code2html-options,
+#swoope-code2html-buttons{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;}
+#swoope-code2html-options>*,
+#swoope-code2html-buttons>*{
+	margin:0.25rem;}
+#swoope-code2html-options>*:first-child,
+#swoope-code2html-buttons>*:first-child{
+	margin-left:0;}
+#swoope-code2html-option-tabsize{
+	width:3rem;}
+#swoope-code2html-html{
+	font-family:ui-monospace;monospace;
+	font-size:1rem;
+	width:100%;}
+#swoope-code2html-text{
+	margin:0.25rem auto;
+	width:100%;
+	min-height:4rem;
+	height:calc(100vh - 28rem);
+	font-family:ui-monospace;monospace;
+	font-size:1rem;
+	line-height:1;
+	tab-size:4;
+	white-space:pre;
+	overflow-wrap:normal;
+	overflow-x:scroll;}
+
